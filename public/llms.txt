@@ -1,0 +1,3 @@
+## Pages
+- [- Fórmula Tech Lead](/blogpost): No description available
+- [Blog - Fórmula Tech Lead](/blog): Artigos, dicas e insights sobre liderança técnica, gestão de times, engenharia de software e carreira em tecnologia.

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://formulatechlead.com.br/sitemap.xml
