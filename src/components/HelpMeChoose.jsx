@@ -8,27 +8,35 @@ const HelpMeChoose = () => {
   const profiles = [
     {
       icon: Briefcase,
-      title: "Quero me preparar para uma Liderança Futura",
-      description: "Você é Sênior ou Tech Lead iniciante e quer estruturar sua base de conhecimento em grupo.",
-      recommendation: "Fórmula Tech Lead",
-      color: "bg-blue-100 text-blue-700",
-      targetId: "produto-formula"
-    },
-    {
-      icon: Zap,
-      title: "Preciso passar em uma Entrevista Agora",
-      description: "Você já tem uma entrevista marcada ou está aplicando ativamente para vagas de Tech Lead.",
-      recommendation: "Interview Tech Lead",
-      color: "bg-purple-100 text-purple-700",
-      targetId: "produto-interview"
+      title: "Estou iniciando na carreira",
+      description: "Você está começando em desenvolvimento e quer dominar os fundamentos de lógica, estrutura de dados e tecnologias.",
+      recommendation: "Dev Junior",
+      color: "bg-green-100 text-green-700",
+      targetId: "produto-dev-junior"
     },
     {
       icon: UserCheck,
-      title: "Já sou Líder e quero Aceleração Máxima",
-      description: "Você precisa de acompanhamento individual, personalizado e profundo para desafios complexos.",
-      recommendation: "Consultoria Individual",
-      color: "bg-emerald-100 text-emerald-700",
-      targetId: "produto-ci"
+      title: "Sou Dev Júnior buscando evoluir",
+      description: "Você tem 1-3 anos de experiência e quer conquistar sua primeira vaga como Dev Pleno com autonomia.",
+      recommendation: "Dev Pleno",
+      color: "bg-blue-100 text-blue-700",
+      targetId: "produto-dev-pleno"
+    },
+    {
+      icon: Zap,
+      title: "Sou Dev Pleno querendo ser Sênior",
+      description: "Você tem 3-6 anos de experiência e busca dominar arquitetura, decisões técnicas e liderança de soluções.",
+      recommendation: "Dev Senior",
+      color: "bg-purple-100 text-purple-700",
+      targetId: "produto-dev-senior"
+    },
+    {
+      icon: Briefcase,
+      title: "Sou Dev Sênior buscando Tech Lead",
+      description: "Você tem 8+ anos de experiência e quer acelerar a transição para liderança técnica com impacto real.",
+      recommendation: "Tech Lead",
+      color: "bg-amber-100 text-amber-700",
+      targetId: "produto-tech-lead"
     }
   ];
 
@@ -60,7 +68,7 @@ const HelpMeChoose = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {profiles.map((profile, index) => {
             const Icon = profile.icon;
             return (
