@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Rocket } from 'lucide-react';
@@ -44,7 +43,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-100">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-20">
-          
+
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="bg-blue-600 p-2 rounded-lg group-hover:bg-blue-700 transition-colors">
@@ -76,8 +75,8 @@ const Header = () => {
                 </button>
               )
             ))}
-            
-            <Button 
+
+            <Button
               className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full px-6"
               onClick={() => window.location.href = 'https://www.instagram.com/brunocaetanobrito/'}
             >
@@ -86,7 +85,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Toggle */}
-          <button 
+          <button
             className="md:hidden p-2 text-slate-600 hover:text-blue-600 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -97,7 +96,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
@@ -105,7 +104,7 @@ const Header = () => {
         >
           <div className="container px-4 py-6 space-y-4">
             {menuItems.map((item, index) => (
-               item.path ? (
+              item.path ? (
                 <Link
                   key={index}
                   to={item.path}
@@ -125,7 +124,7 @@ const Header = () => {
               )
             ))}
             <div className="pt-4">
-              <Button 
+              <Button
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 text-lg"
                 onClick={() => window.location.href = 'https://www.instagram.com/brunocaetanobrito/'}
               >

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -17,10 +16,10 @@ function App() {
         <title>Fórmula Tech Lead</title>
         <meta name="description" content="Fórmula Tech Lead - um programa de acompanhamento personalizado para desenvolvedores alavancarem sua carreira, com clareza, suporte, direcionamento e feedback para fazer a transição de executor para Tech Lead de alta performance." />
       </Helmet>
-      
+
       <div className="min-h-screen bg-slate-50 flex flex-col">
         <Header />
-        
+
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

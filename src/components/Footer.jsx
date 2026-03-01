@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Linkedin } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';

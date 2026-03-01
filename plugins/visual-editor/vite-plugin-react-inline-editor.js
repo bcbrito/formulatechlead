@@ -50,7 +50,7 @@ function checkTagNameEditable(openingElementNode, editableTagsList) {
 }
 
 function validateImageSrc(openingNode) {
-	if (!openingNode || !openingNode.name || openingNode.name.name !== 'img') {
+	if (!openingNode || !openingNode.name || ( openingNode.name.name !== 'img' && openingNode.name.property?.name !== 'img')) {
 		return { isValid: true, reason: null }; // Not an image, skip validation
 	}
 

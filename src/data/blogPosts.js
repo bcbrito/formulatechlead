@@ -1,4 +1,3 @@
-
 const getDetailedContent = (title, category, excerpt) => {
   // Helper to generate section HTML
   const Section = ({ title, children }) => `

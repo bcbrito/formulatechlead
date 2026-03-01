@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogClose } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -17,6 +16,14 @@ const LeadCaptureModal = () => {
   const { toast } = useToast();
 
   useEffect(() => {
+    // Show modal after 5 seconds on the home page
+    const timer = setTimeout(() => {
+      const hasSeenModal = localStorage.getItem('hasSeenLeadCapture');
+      if (!hasSeenModal) {
+        setIsOpen(true);
+      }
+    }, 5000); 
+
     // Global event listener for buttons that should open the modal
     const handleGlobalClick = (e) => {
       const target = e.target;
@@ -37,6 +44,7 @@ const LeadCaptureModal = () => {
     document.addEventListener('click', handleGlobalClick, true); // Use capture phase to ensure we catch it before others
 
     return () => {
+      clearTimeout(timer);
       document.removeEventListener('click', handleGlobalClick, true);
     };
   }, []);
@@ -67,11 +75,11 @@ const LeadCaptureModal = () => {
       // 2. Construct WhatsApp Message
       const message = `Olá! Gostaria de falar sobre o Fórmula Tech Lead.
 
-📋 *Meus Dados:*
-👤 *Nome:* ${data.name}
-📧 *Email:* ${data.email}
-📱 *Telefone:* ${data.phone}
-🎯 *Objetivo:* ${data.goal}`;
+      📋 *Meus Dados:*
+      👤 *Nome:* ${data.name}
+      📧 *Email:* ${data.email}
+      📱 *Telefone:* ${data.phone}
+      🎯 *Objetivo:* ${data.goal}`;
 
       // 3. Open WhatsApp
       // Using window.open directly here ensures it's not blocked since it's inside a user event handler

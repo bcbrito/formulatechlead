@@ -12,11 +12,9 @@ const MentorInfo = () => {
   const handleLinkedinClick = () => {
     window.location.href = 'https://www.linkedin.com/in/brunocaetanobrito/';
   };
-
   const handleMailClick = () => {
     window.location.href = 'mailto:contato@formulatechlead.com.br';
   };
-
   const achievements = [{
     icon: Briefcase,
     number: '10+',
@@ -83,7 +81,7 @@ const MentorInfo = () => {
               <div className="mb-6">
                 <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">Fórmula Tech Lead</h3>
                 <p className="text-xl text-blue-600 font-semibold mb-4">Tech Lead & Software Engineering</p>
-                <p className="text-slate-600 leading-relaxed text-lg">Com mais de 10 anos de experiência em tecnologia, liderou times de engenharia em empresas de diversos portes, desde startups até grandes corporações. Especialista em desenvolver líderes técnicos e construir culturas de engenharia de alta performance.</p>
+                <p className="text-slate-600 leading-relaxed text-lg">Com mais de 12 anos de experiência em tecnologia, liderou times de engenharia em empresas de diversos portes, desde startups até grandes corporações. Especialista em desenvolver líderes técnicos e construir culturas de engenharia de alta performance.</p>
               </div>
 
               {/* Social Links */}

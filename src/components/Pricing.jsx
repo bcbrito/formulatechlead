@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check, Sparkles, Calendar, Users, Video, BookOpen, MessageSquare, Award } from 'lucide-react';

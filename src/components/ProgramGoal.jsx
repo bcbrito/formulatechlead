@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Rocket, Map, Trophy, Star, Zap } from 'lucide-react';
