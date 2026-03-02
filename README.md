@@ -296,3 +296,5 @@ Se este projeto foi útil para você, considere dar uma ⭐ no GitHub!
 ---
 
 **Fórmula Tech Lead** © 2026. Todos os direitos reservados.
+
+> **Status:** ✅ Deploy automático via GitHub Actions configurado e ativo!
