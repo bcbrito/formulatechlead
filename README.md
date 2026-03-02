@@ -260,7 +260,7 @@ Veja se sua experiência encaixa:
 
 ### Como funciona a mentoria?
 
-Combinamos sessões 1:1 (individualizadas) com SHT (Strategic Helping Talks) e conteúdo estruturado.
+Solicite um diagnóstico gratuito para uma proposta personalizada, que iremos explicar tim tim por tim tim.
 
 ### Qual é o investimento?
 
