@@ -25,6 +25,33 @@ jobs:
       - name: 🏗️ Build project
         run: npm run build
 
+      - name: 🗂️ Backup current deploy (download from server)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        continue-on-error: true
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./backup/
+          server-dir: ${{ secrets.FTP_REMOTE_DIR }}
+          download: true
+
+      - name: 📦 Compress backup
+        run: |
+          DATE=$(date +'%Y%m%d-%H%M%S')
+          zip -r backup-$DATE.zip ./backup || true
+
+      - name: ☁️ Upload backup to server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        continue-on-error: true
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: backups/
+          include: "backup-*.zip"
+
       - name: 🚀 Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
