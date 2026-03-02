@@ -27,7 +27,7 @@ jobs:
 
       - name: 🚀 Deploy to Hostinger via FTP
         run: |
-          apt-get update && apt-get install -y lftp
+          sudo apt-get update && sudo apt-get install -y lftp
           lftp -e "
           set ftp:ssl-allow no
           open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
