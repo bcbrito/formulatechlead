@@ -25,12 +25,13 @@ jobs:
       - name: 🏗️ Build project
         run: npm run build
 
-      - name: 🚀 Deploy to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_REMOTE_DIR }}
-          local-dir: ./dist/
-          dangerous-clean-slate: false
+      - name: 🚀 Deploy to Hostinger via FTP
+        run: |
+          apt-get update && apt-get install -y lftp
+          lftp -e "
+          set ftp:ssl-allow no
+          open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
+          cd ${{ secrets.FTP_REMOTE_DIR }}
+          mirror -R ./dist ./
+          quit
+          "
