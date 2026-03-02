@@ -8,6 +8,7 @@ import Blog from '@/pages/Blog';
 import BlogPost from '@/pages/BlogPost';
 import { Toaster } from '@/components/ui/toaster';
 import LeadCaptureModal from '@/components/LeadCaptureModal';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Footer />
         <Toaster />
         <LeadCaptureModal />
+        <ScrollToTopButton />
       </div>
     </Router>
   );
