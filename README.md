@@ -237,12 +237,27 @@ Este projeto está licenciado sob a licença MIT — veja o arquivo [LICENSE](LI
 
 ---
 
+## � Acompanhe o Conteúdo no LinkedIn
+
+Receba insights, dicas e novidades sobre carreira em desenvolvimento, liderança técnica e evolução profissional:
+
+### 📢 [Assine a Newsletter no LinkedIn](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7419361239694241793)
+
+Conteúdo exclusivo toda semana sobre:
+- 💡 Estratégias de carreira para Tech Leads
+- 🎯 Tendências em arquitetura e liderança técnica
+- 📊 Análises de mercado e mercado de trabalho
+- 👥 Histórias de sucesso de profissionais em transição
+- 🚀 Frameworks e metodologias comprovadas
+
+---
+
 ## 📧 Contato & Social
 
 Quer conhecer mais sobre o programa Fórmula Tech Lead?
 
 - **Instagram**: [@brunocaetanobrito](https://www.instagram.com/brunocaetanobrito/)
-- **LinkedIn**: [Bruno Caetano Brito](https://www.linkedin.com/in/brunocaetanobrito/)
+- **LinkedIn**: [Bruno Caetano Brito](https://www.linkedin.com/in/brunocaetanobrito/) — [Assinar Newsletter](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7419361239694241793)
 - **Email**: [contato@formulatechlead.com.br](mailto:contato@formulatechlead.com.br)
 - **Site**: [formulatechlead.com.br]()
 

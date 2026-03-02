@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Linkedin } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
+import LinkedInNewsletter from '@/components/LinkedInNewsletter';
 const Footer = () => {
   const {
     toast
@@ -25,6 +26,15 @@ const Footer = () => {
   };
   return <footer className="bg-slate-900 text-white py-12 px-4">
       <div className="container mx-auto max-w-6xl">
+        {/* Newsletter Section */}
+        <div className="bg-gradient-to-r from-blue-600/20 to-blue-700/20 border border-blue-500/30 rounded-xl p-8 mb-12 text-center">
+          <h3 className="text-xl font-bold mb-3">📢 Conteúdo Exclusivo no LinkedIn</h3>
+          <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
+            Receba insights semanais sobre carreira em desenvolvimento, liderança técnica e estratégias para evoluir profissionalmente.
+          </p>
+          <LinkedInNewsletter />
+        </div>
+
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '@/components/Hero';
+import LinkedInPromotion from '@/components/LinkedInPromotion';
 import ProductComparison from '@/components/ProductComparison';
 import ProductsDetail from '@/components/ProductsDetail';
 import HelpMeChoose from '@/components/HelpMeChoose';
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <LinkedInPromotion />
       <HelpMeChoose />
       <ProductsDetail />
       <ProductComparison />
